@@ -17,7 +17,7 @@
 
 <!-- General and theme style sheets -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/reveal.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/theme/serif.css" id="theme">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.5.0/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -13242,7 +13242,8 @@ a.anchor-link {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="python-constraint">python-constraint<a class="anchor-link" href="#python-constraint">&#182;</a></h1><h4 id="Constraint-Solving-Problem-resolver-for-Python"><em>Constraint Solving Problem resolver for Python</em><a class="anchor-link" href="#Constraint-Solving-Problem-resolver-for-Python">&#182;</a></h4>
+<h1 id="python-constraint">python-constraint<a class="anchor-link" href="#python-constraint">&#182;</a></h1><h4 id="Constraint-Solving-Problem-resolver-for-Python"><em>Constraint Solving Problem resolver for Python</em><a class="anchor-link" href="#Constraint-Solving-Problem-resolver-for-Python">&#182;</a></h4><p><em>Daniel Calle, Adrian Dorta, Zihao Hong</em></p>
+
 </div>
 </div>
 </div></section></section><section><section>
@@ -13264,7 +13265,7 @@ a.anchor-link {
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>pip install python-constraint
@@ -13284,9 +13285,14 @@ a.anchor-link {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Requirement already satisfied: python-constraint in /mnt/c/Users/danie/Documents/python-constraints/lib/python3.6/site-packages (1.4.0)
-<span class="ansi-yellow-fg">You are using pip version 19.0.3, however version 19.1.1 is available.
-You should consider upgrading via the &#39;pip install --upgrade pip&#39; command.</span>
+<pre>Collecting python-constraint
+  Downloading https://files.pythonhosted.org/packages/37/8b/5f1bc2734ca611943e1d6733ee244238679f6410a10cd45ede55a61a8402/python-constraint-1.4.0.tar.bz2
+Building wheels for collected packages: python-constraint
+  Building wheel for python-constraint (setup.py) ... done
+  Stored in directory: /home/jovyan/.cache/pip/wheels/34/31/15/7b070b25d0a549d20ce2e9fe6d727471c2c61ef904720fd40c
+Successfully built python-constraint
+Installing collected packages: python-constraint
+Successfully installed python-constraint-1.4.0
 </pre>
 </div>
 </div>
@@ -13305,7 +13311,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">constraint</span> <span class="k">import</span> <span class="o">*</span>
@@ -13326,7 +13332,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">problem</span> <span class="o">=</span> <span class="n">Problem</span><span class="p">()</span>
@@ -13344,7 +13350,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[56]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -13361,7 +13367,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">problem</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
@@ -13381,7 +13387,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[57]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -13398,7 +13404,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">problem</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
@@ -13417,7 +13423,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[58]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13434,7 +13440,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">problem</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
@@ -13451,7 +13457,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[59]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -13468,7 +13474,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">problem</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
@@ -13485,7 +13491,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[60]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -13502,7 +13508,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">problem</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
@@ -13519,7 +13525,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[61]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -13549,7 +13555,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">solver</span> <span class="o">=</span> <span class="n">BacktrackingSolver</span><span class="p">()</span>
@@ -13567,7 +13573,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[62]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
@@ -13584,7 +13590,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">problem</span><span class="o">.</span><span class="n">setSolver</span><span class="p">(</span><span class="n">RecursiveBacktrackingSolver</span><span class="p">)</span>
@@ -13601,7 +13607,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[63]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -13626,7 +13632,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="p">[[(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)],</span>
@@ -13641,7 +13647,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">problem</span> <span class="o">=</span> <span class="n">Problem</span><span class="p">(</span><span class="n">BacktrackingSolver</span><span class="p">())</span>
@@ -13673,7 +13679,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">problem</span> <span class="o">=</span> <span class="n">Problem</span><span class="p">(</span><span class="n">RecursiveBacktrackingSolver</span><span class="p">())</span>
@@ -13693,7 +13699,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">problem</span><span class="o">.</span><span class="n">getSolutionIter</span><span class="p">()</span>
@@ -13716,17 +13722,17 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">NotImplementedError</span>                       Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-67-6d0cdaf1300b&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">&lt;ipython-input-15-6d0cdaf1300b&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>problem<span class="ansi-blue-fg">.</span>getSolutionIter<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">/mnt/c/Users/danie/Documents/python-constraints/lib/python3.6/site-packages/constraint/__init__.py</span> in <span class="ansi-cyan-fg">getSolutionIter</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-fg">/srv/conda/lib/python3.6/site-packages/constraint/__init__.py</span> in <span class="ansi-cyan-fg">getSolutionIter</span><span class="ansi-blue-fg">(self)</span>
 <span class="ansi-green-intense-fg ansi-bold">    292</span>         <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> domains<span class="ansi-blue-fg">:</span>
 <span class="ansi-green-intense-fg ansi-bold">    293</span>             <span class="ansi-green-fg">return</span> iter<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
 <span class="ansi-green-fg">--&gt; 294</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_solver<span class="ansi-blue-fg">.</span>getSolutionIter<span class="ansi-blue-fg">(</span>domains<span class="ansi-blue-fg">,</span> constraints<span class="ansi-blue-fg">,</span> vconstraints<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">    295</span> 
 <span class="ansi-green-intense-fg ansi-bold">    296</span>     <span class="ansi-green-fg">def</span> _getArgs<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
 
-<span class="ansi-green-fg">/mnt/c/Users/danie/Documents/python-constraints/lib/python3.6/site-packages/constraint/__init__.py</span> in <span class="ansi-cyan-fg">getSolutionIter</span><span class="ansi-blue-fg">(self, domains, constraints, vconstraints)</span>
+<span class="ansi-green-fg">/srv/conda/lib/python3.6/site-packages/constraint/__init__.py</span> in <span class="ansi-cyan-fg">getSolutionIter</span><span class="ansi-blue-fg">(self, domains, constraints, vconstraints)</span>
 <span class="ansi-green-intense-fg ansi-bold">    436</span>         &#34;&#34;&#34;
 <span class="ansi-green-intense-fg ansi-bold">    437</span>         msg <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">&#34;%s doesn&#39;t provide iteration&#34;</span> <span class="ansi-blue-fg">%</span> self<span class="ansi-blue-fg">.</span>__class__<span class="ansi-blue-fg">.</span>__name__
 <span class="ansi-green-fg">--&gt; 438</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">raise</span> NotImplementedError<span class="ansi-blue-fg">(</span>msg<span class="ansi-blue-fg">)</span>
@@ -13750,7 +13756,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">problem</span> <span class="o">=</span> <span class="n">Problem</span><span class="p">(</span><span class="n">MinConflictsSolver</span><span class="p">())</span>
@@ -13770,7 +13776,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[68]:</div>
+    <div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -13787,7 +13793,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">problem</span><span class="o">.</span><span class="n">getSolutions</span><span class="p">()</span>
@@ -13810,17 +13816,17 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">NotImplementedError</span>                       Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-69-a0841ceee5a9&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">&lt;ipython-input-17-a0841ceee5a9&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>problem<span class="ansi-blue-fg">.</span>getSolutions<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">/mnt/c/Users/danie/Documents/python-constraints/lib/python3.6/site-packages/constraint/__init__.py</span> in <span class="ansi-cyan-fg">getSolutions</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-fg">/srv/conda/lib/python3.6/site-packages/constraint/__init__.py</span> in <span class="ansi-cyan-fg">getSolutions</span><span class="ansi-blue-fg">(self)</span>
 <span class="ansi-green-intense-fg ansi-bold">    269</span>         <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> domains<span class="ansi-blue-fg">:</span>
 <span class="ansi-green-intense-fg ansi-bold">    270</span>             <span class="ansi-green-fg">return</span> <span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">]</span>
 <span class="ansi-green-fg">--&gt; 271</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_solver<span class="ansi-blue-fg">.</span>getSolutions<span class="ansi-blue-fg">(</span>domains<span class="ansi-blue-fg">,</span> constraints<span class="ansi-blue-fg">,</span> vconstraints<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">    272</span> 
 <span class="ansi-green-intense-fg ansi-bold">    273</span>     <span class="ansi-green-fg">def</span> getSolutionIter<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
 
-<span class="ansi-green-fg">/mnt/c/Users/danie/Documents/python-constraints/lib/python3.6/site-packages/constraint/__init__.py</span> in <span class="ansi-cyan-fg">getSolutions</span><span class="ansi-blue-fg">(self, domains, constraints, vconstraints)</span>
+<span class="ansi-green-fg">/srv/conda/lib/python3.6/site-packages/constraint/__init__.py</span> in <span class="ansi-cyan-fg">getSolutions</span><span class="ansi-blue-fg">(self, domains, constraints, vconstraints)</span>
 <span class="ansi-green-intense-fg ansi-bold">    421</span>         &#34;&#34;&#34;
 <span class="ansi-green-intense-fg ansi-bold">    422</span>         msg <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">&#34;%s provides only a single solution&#34;</span> <span class="ansi-blue-fg">%</span> self<span class="ansi-blue-fg">.</span>__class__<span class="ansi-blue-fg">.</span>__name__
 <span class="ansi-green-fg">--&gt; 423</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">raise</span> NotImplementedError<span class="ansi-blue-fg">(</span>msg<span class="ansi-blue-fg">)</span>
@@ -13837,7 +13843,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">problem</span><span class="o">.</span><span class="n">getSolutionIter</span><span class="p">()</span>
@@ -13860,17 +13866,17 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">NotImplementedError</span>                       Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-70-6d0cdaf1300b&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">&lt;ipython-input-18-6d0cdaf1300b&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>problem<span class="ansi-blue-fg">.</span>getSolutionIter<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">/mnt/c/Users/danie/Documents/python-constraints/lib/python3.6/site-packages/constraint/__init__.py</span> in <span class="ansi-cyan-fg">getSolutionIter</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-fg">/srv/conda/lib/python3.6/site-packages/constraint/__init__.py</span> in <span class="ansi-cyan-fg">getSolutionIter</span><span class="ansi-blue-fg">(self)</span>
 <span class="ansi-green-intense-fg ansi-bold">    292</span>         <span class="ansi-green-fg">if</span> <span class="ansi-green-fg">not</span> domains<span class="ansi-blue-fg">:</span>
 <span class="ansi-green-intense-fg ansi-bold">    293</span>             <span class="ansi-green-fg">return</span> iter<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
 <span class="ansi-green-fg">--&gt; 294</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> self<span class="ansi-blue-fg">.</span>_solver<span class="ansi-blue-fg">.</span>getSolutionIter<span class="ansi-blue-fg">(</span>domains<span class="ansi-blue-fg">,</span> constraints<span class="ansi-blue-fg">,</span> vconstraints<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">    295</span> 
 <span class="ansi-green-intense-fg ansi-bold">    296</span>     <span class="ansi-green-fg">def</span> _getArgs<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
 
-<span class="ansi-green-fg">/mnt/c/Users/danie/Documents/python-constraints/lib/python3.6/site-packages/constraint/__init__.py</span> in <span class="ansi-cyan-fg">getSolutionIter</span><span class="ansi-blue-fg">(self, domains, constraints, vconstraints)</span>
+<span class="ansi-green-fg">/srv/conda/lib/python3.6/site-packages/constraint/__init__.py</span> in <span class="ansi-cyan-fg">getSolutionIter</span><span class="ansi-blue-fg">(self, domains, constraints, vconstraints)</span>
 <span class="ansi-green-intense-fg ansi-bold">    436</span>         &#34;&#34;&#34;
 <span class="ansi-green-intense-fg ansi-bold">    437</span>         msg <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">&#34;%s doesn&#39;t provide iteration&#34;</span> <span class="ansi-blue-fg">%</span> self<span class="ansi-blue-fg">.</span>__class__<span class="ansi-blue-fg">.</span>__name__
 <span class="ansi-green-fg">--&gt; 438</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">raise</span> NotImplementedError<span class="ansi-blue-fg">(</span>msg<span class="ansi-blue-fg">)</span>
@@ -13907,7 +13913,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">problem</span> <span class="o">=</span> <span class="n">Problem</span><span class="p">()</span>
@@ -13926,7 +13932,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[71]:</div>
+    <div class="prompt output_prompt">Out[19]:</div>
 
 
 
@@ -13948,7 +13954,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">problem</span> <span class="o">=</span> <span class="n">Problem</span><span class="p">()</span>
@@ -13967,7 +13973,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[72]:</div>
+    <div class="prompt output_prompt">Out[20]:</div>
 
 
 
@@ -13984,7 +13990,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">problem</span> <span class="o">=</span> <span class="n">Problem</span><span class="p">()</span>
@@ -14003,7 +14009,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[73]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -14020,7 +14026,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">problem</span> <span class="o">=</span> <span class="n">Problem</span><span class="p">()</span>
@@ -14039,7 +14045,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[74]:</div>
+    <div class="prompt output_prompt">Out[22]:</div>
 
 
 
@@ -14065,14 +14071,14 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1>Rooks problem</h1><p>The following example solves the classical Eight Rooks problem:</p>
+<h1> Problema de las Torres</h1><p>El siguiente ejemplo resuelve el problema de las ocho reinas de Ajedrez:</p>
 
 </div>
 </div>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">problem</span> <span class="o">=</span> <span class="n">Problem</span><span class="p">()</span>
@@ -14098,7 +14104,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[75]:</div>
+    <div class="prompt output_prompt">Out[23]:</div>
 
 
 
@@ -15116,14 +15122,14 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1>Magic squares</h1><p>This example solves a 4x4 magic square:</p>
+<h1>Cuadrados mágicos</h1><p>Este ejemplo resuelve un cuadrado mágico 4x4:</p>
 
 </div>
 </div>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">problem</span> <span class="o">=</span> <span class="n">Problem</span><span class="p">()</span>
@@ -15150,7 +15156,7 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[76]:</div>
+    <div class="prompt output_prompt">Out[24]:</div>
 
 
 
@@ -15179,7 +15185,14 @@ You should consider upgrading via the &#39;pip install --upgrade pip&#39; comman
 </div>
 </div>
 
-</div></div></section></section>
+</div></div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h5 id="Bibliografia:-https://labix.org/python-constraint">Bibliografia: <em><a href="https://labix.org/python-constraint">https://labix.org/python-constraint</a></em><a class="anchor-link" href="#Bibliografia:-https://labix.org/python-constraint">&#182;</a></h5><h5 id="GitHub:-https://github.com/DanielCalle/python-constraints">GitHub: <em><a href="https://github.com/DanielCalle/python-constraints">https://github.com/DanielCalle/python-constraints</a></em><a class="anchor-link" href="#GitHub:-https://github.com/DanielCalle/python-constraints">&#182;</a></h5><h5 id="Transparencias:-https://danielcalle.github.io/python-constraints/">Transparencias: <em><a href="https://danielcalle.github.io/python-constraints/">https://danielcalle.github.io/python-constraints/</a></em><a class="anchor-link" href="#Transparencias:-https://danielcalle.github.io/python-constraints/">&#182;</a></h5>
+</div>
+</div>
+</div></section></section>
 </div>
 </div>
 
@@ -15204,7 +15217,7 @@ require(
             progress: true,
             history: true,
 
-            transition: "none",
+            transition: "slide",
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
@@ -15225,7 +15238,7 @@ require(
         Reveal.addEventListener('slidechanged', update);
 
         function setScrollingSlide() {
-            var scroll = true
+            var scroll = false
             if (scroll === true) {
               var h = $('.reveal').height() * 0.95;
               $('section.present').find('section')
