@@ -3,6 +3,10 @@
 #### *Constraint Solving Problem resolver for Python*
  
  *Daniel Calle, Adrian Dorta, Zihao Hong*
+ 
+##### Bibliografia: *https://labix.org/python-constraint*
+        
+##### Transparencias: *https://danielcalle.github.io/python-constraints/*
 
 # Introducción
 **Python constraint** es un módulo que ofrece resolutores para **Constraint Satisfaction Problems (CSPs)** sobre dominios finitos en un simple y puro **Python**. **CSP** es una clase de problemas los cuales pueden ser representados en términos de **variables** (a, b, …), **dominios** (a in [1,2,3], …), y **restricciones** (a < b, …).
@@ -1462,8 +1466,3 @@ problem.getSolution()
 
 
 
-##### Bibliografia: *https://labix.org/python-constraint*
-        
-##### GitHub: *https://github.com/DanielCalle/python-constraints*
-        
-##### Transparencias: *https://danielcalle.github.io/python-constraints/*
