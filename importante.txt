@@ -1,0 +1,12 @@
+Daniel Calle
+Adrian Dorta
+Zihao Hong
+
+Transparencias: 
+    https://danielcalle.github.io/python-constraints/
+    o el index.html
+
+Repositorio del proyecto:
+    https://github.com/DanielCalle/python-constraints
+
+Se necesita que el archivo PythonConstraint.ipynb esté subido en el campus para la presentación.

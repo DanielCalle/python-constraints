@@ -4,7 +4,7 @@
  
  *Daniel Calle, Adrian Dorta, Zihao Hong*
  
-##### Bibliografia: *https://labix.org/python-constraint*
+##### Bibliografía: *https://labix.org/python-constraint*
         
 ##### Transparencias: *https://danielcalle.github.io/python-constraints/*
 
@@ -400,7 +400,7 @@ Ahora vamos a ver algunos ejemplos de implementación de problemas
 
 <h1> Problema de las Torres</h1>
 
- El siguiente ejemplo resuelve el problema de las ocho reinas de Ajedrez:
+ El siguiente ejemplo resuelve el problema de las ocho torres de Ajedrez:
 
 
 ```python
